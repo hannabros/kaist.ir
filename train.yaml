@@ -1,0 +1,13 @@
+experiment: "qa_contrastive"
+bert_model: "klue/bert-base" 
+mothod: "contrastive"
+epochs: 5
+beta: 0.001
+sigma: 0.001
+log_interval: 1000
+learning_rate: 5e-5
+train_squad_path: "/home/ubuntu/workspace/kaist.ir/qa/data/korquad/KorQuAD_v1.0_train.json"
+train_hub_path: "/home/ubuntu/workspace/kaist.ir/qa/data/newsqa/news_train_all_10.json"
+valid_path: "/home/ubuntu/workspace/kaist.ir/qa/data/korquad/KorQuAD_v1.0_dev.json"
+source_no: 2
+model_path: "/home/ubuntu/workspace/kaist.ir/qa/model/qa_bert_src2"
